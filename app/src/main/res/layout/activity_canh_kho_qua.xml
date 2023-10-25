@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CanhKhoQua">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#7F3333"
+        android:layout_height="80dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:gravity="center"
+
+            android:text="Danh mục món ăn"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/btnNote"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnNote"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/note" />
+
+        <ImageButton
+            android:id="@+id/btnLove"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            android:layout_marginRight="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnNote"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/love" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Canh khổ qua" />
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nguyên liệu:" />
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  Khổ qua 3 trái\n
+ Thịt băm 200 gr\n
+ Nấm mèo 50 gr\n
+ Trứng vịt 1 quả\n
+ Nước dùng heo 800 ml\n
+ Hành tím 1 củ\n
+ Tỏi 2 tép\n
+ Gia vị thông dụng 1 ít\n
+(đường/ muối/ hạt nêm/ tiêu)" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các bước làm:" />
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="
+  Bước 1: Chuẩn bị khổ qua:\n
+    Rửa sạch khổ qua.\n
+    Cắt khổ qua thành nhiều phần, khoảng 5-7cm mỗi phần.\n
+    Xẻ ngang từng phần khổ qua một đường dọc, nhưng không cắt qua hết.\n
+    Cạo bỏ ruột và hạt bên trong khổ qua.\n
+  Bước 2: Chuẩn bị nhân thịt
+
+    Trong một tô, trộn thịt xay với 1 thìa muối và 2 thìa đường.\n
+    Trộn đều cho đến khi muối và đường hòa quyện vào thịt.\n
+  Bước 3: Nhồi thịt và nấu canh\n
+
+    Lấy một phần nhân thịt đã chuẩn bị và nhồi vào mỗi phần khổ qua đã xẻ trước đó.\n
+    Đun nước sôi trong nồi lớn.\n
+    Cho khổ qua nhồi thịt vào nồi và đun trong khoảng 30 phút, cho đến khi khổ qua chín mềm và thịt trong khổ qua chín.
+  " />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
